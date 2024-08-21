@@ -3,57 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Bar</title>
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Basic styling for the navigation bar */
-        .navbar {
+        body {
+            margin: 0;
+            font-family: 'Helvetica', sans-serif;
+            color: #171717;
+            background-color: white;
+        }
+        header {
+            background-color: #171717;
+            color: white;
+            padding: 10px 20px;
             display: flex;
             align-items: center;
-            padding: 48px 40px;
-            background-color: #ffff;
-            drop-shadow: 50%
-            shadow-color: #171717;
-            color: white;
+            justify-content: space-between;
         }
-
-        /* Styling for the logo */
-        .logo {
-            margin-right: 40px;
-        }
-
-        /* Styling for the navigation links */
-        .nav-links {
-            display: flex;
-            list-style: none;
+        header h1 {
+            font-family: 'Poppins', sans-serif;
             margin: 0;
-            padding: 0;
         }
-
-        .nav-links li {
-            margin: 0 15px;
+        nav {
+            display: flex;
+            gap: 15px;
         }
-
-        .nav-links a {
+        nav a {
             color: white;
             text-decoration: none;
-            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
         }
-
-        .nav-links a:hover {
-            text-decoration: underline;
+        section {
+            padding: 20px;
+        }
+        section h2 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .company {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .company img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #171717;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <!-- Logo Section -->
-        <div class="logo">
-            <img src="logo.png" alt="Logo" height="40">
-        </div>
-        </ul>
-    </nav>
+    <header>
+        <h1>Your Logo</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#company1">Company 1</a>
+            <a href="#company2">Company 2</a>
+            <a href="#company3">Company 3</a>
+            <a href="#company4">Company 4</a>
+            <a href="#company5">Company 5</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! Here you will find information about my professional journey and the companies I have worked with.</p>
+    </section>
+
+    <section id="company1" class="company">
+        <h2>Company Name 1</h2>
+        <img src="placeholder-image.jpg" alt="Company 1 Image">
+        <p>Details about Company 1 and the work done there.</p>
+    </section>
+
+    <section id="company2" class="company">
+        <h2>Company Name 2</h2>
+        <img src="placeholder-image.jpg" alt="Company 2 Image">
+        <p>Details about Company 2 and the work done there.</p>
+    </section>
+
+    <section id="company3" class="company">
+        <h2>Company Name 3</h2>
+        <img src="placeholder-image.jpg" alt="Company 3 Image">
+        <p>Details about Company 3 and the work done there.</p>
+    </section>
+
+    <section id="company4" class="company">
+        <h2>Company Name 4</h2>
+        <img src="placeholder-image.jpg" alt="Company 4 Image">
+        <p>Details about Company 4 and the work done there.</p>
+    </section>
+
+    <section id="company5" class="company">
+        <h2>Company Name 5</h2>
+        <img src="placeholder-image.jpg" alt="Company 5 Image">
+        <p>Details about Company 5 and the work done there.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
 
 </body>
 </html>
