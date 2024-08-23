@@ -63,6 +63,11 @@ h3 {
   letter-spacing: 0.08rem;
 }
 
+a {
+  text-decoration: underline;
+  color: var(--color-black);
+}
+
 nav {
   position: fixed;
   display: flex;
