@@ -1,8 +1,9 @@
 :root {
-  --body-background-color: #ededed;
+  --body-background-color: #E6EBF1;
   --color-primary: #000;
   --color-black: #171717;
-  --font-family-default: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --color-gray: #4d5b73;
+  --font-family-default: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-size-default: 20px;
   --page-max-width: 768px;
   --border-radius: 1.5rem;
@@ -15,13 +16,14 @@
 }
 
 body {
-  font-family: 'Helvetica', sans-serif;
+  font-family: var(--font-family-default);
   color: var(--color-black);
   background-color: var(--body-background-color);
   text-align: left;
   font-size: var(--font-size-default);
   margin: 0;
   padding: 1rem;
+  font-weight: 300;
 }
 
 header,
@@ -51,7 +53,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.7rem;
+    margin-top:2rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--color-gray);
+  letter-spacing: 0.08rem;
 }
 
 main {
@@ -71,6 +77,10 @@ section {
   @media (max-width: 768px) {
     padding: 1rem 0;
   }
+}
+
+strong {
+    font-weight: 600;
 }
 
 img {
